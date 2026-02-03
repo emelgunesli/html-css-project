@@ -1,11 +1,11 @@
 {
-  "name": "html-css-projects",
+  "name": "html-css-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/html-css-projects/",
+    "build": "vite build --base=/html-css-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
