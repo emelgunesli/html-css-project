@@ -2,108 +2,171 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/html-css-project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenHarvest</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+
+
     <script type="module" crossorigin src="/html-css-project/index.js"></script>
     <link rel="stylesheet" crossorigin href="/html-css-project/assets/index-DKJJ9GK6.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/html-css-project/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+<div class="header-container">
+  <!-- LOGO -->
+   
+  <svg width="20px" height="20px" class="logo-icon">
+    <use href="src\img\webp\icons..svg#icon-Vector">
+    </use>
+  </svg>
+  <a class="logo-text" href="#">GREEN.HARVEST</a>
+
+  <!--MENU İCON-->
+
+<label for="menu-toggle" class="burger-botton" aria-label="Open menu">
+<svg width="27px" height="20px" class="burger-icon">
+  <use href="src\img\webp\icons..svg#icon-menu">
+  </use>
+</svg>
+</label>
+
+<!--checkbox-->
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+
+  <!--burger button-->
+
+  <label for="menu-toggle" class="burger-button" aria-label="Open menu">
+    <svg class="burger-icon burger-icon--tablet" aria-hidden="true">
+      <use href="src\img\webp\icons..svg#icon-menu"></use>
+    </svg>
+        
+    <svg class="burger-icon burger-icon--mobile" aria-hidden="true">
+      <use href="src\img\webp\icons..svg#icon-menu"></use>
+    </svg>
+  </label>
+
+<!--Desktop Nav-->
+
+  <nav class="desktop-nav">
+    <ul class="nav-bar-list">
+      <li class="nav-bar-element">
+        <a href="#">How It Works</a>
+      </li>
+      <li class="nav-bar-element">
+        <a href="#">Vegetables</a>
+      </li>
+      <li class="nav-bar-element">
+        <a href="#">Reviews</a>
+      </li>
+    </ul>
+    <button class="nav-bar-button" type="button">Shop now</button>
+  </nav>
+  <!--Mobile Menu-->
+
+<div class="mobile-menu" aria-hidden="true">
+<div class="mobile-menu-panel">
+  <label for="menu-toggle" class="mobile-menu-close" aria-label="Close menu">
+    <svg class="close-icon" aria-hidden="true">
+      <use href="src\img\icons..svg#icon-closed"></use>
+    </svg>
+  </label>
+          
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">How It Works</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Vegetables</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Reviews</a>
         </li>
       </ul>
-    </nav>
-  </div>
+          
+      <button class="mobile-menu-button" type="button">Shop now</button>
+</div>
+</div>
+
+</div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/html-css-project/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+      <section class="hero">
+    <div class="hero-container">
+        <div class="hero-text-title">
+            <span class="hero-title">organic vegetables to your diet today!</span>
+            <p class="hero-text">Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest
+            Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.
+            </p>
+        </div>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <div class="hero-image">
+        <picture>
+            <source media="(min-width: 1280px)" srcset="src\img\image-1-1x.jpg src\img\image-1.jpg" />
+            <img src="src\img\image-1-1x.jpg"
+             alt="Basket with vegetables"
+              class="hero-img hero-img--basket"
+               loading="eager"/>
+               
+        </picture>
+
+    </div>
+</section>
+
+      <section>
+  <div class="how-ıs-works-container">
+    <div class="how-ıs-works-image">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="src\img\image-2-1x.jpg src\img\image-2.jpg" />
+                  <img src="src\img\image-2-1x.jpg " alt="Preparing vegetables in the kitchen"
+                    class="hero-img hero-img--cutting" loading="lazy" />
+                </picture>
+    </div>
+    <div class="how-ıs-works-text-group">
+      <h3 class="how-ıs-works-title">To order your vegetable basket, simply follow these easy steps</h3>
+      <p class="how-ıs-works-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit
+      without ever leaving your home.</p>
+      <ul class="how-ıs-works-list-top">
+        <li class="how-ıs-works-list">
+          <svg width="7px" height="20px" class="how-ıs-works-list-icon">
+            <use href="src\img\icons..svg#icon-1"></use>
+          </svg>
+          <p class="how-ıs-works-list-text">Just choose the vegetable you want to order by clicking on the checkboxes next to it.</p>
+        </li>
+        <li class="how-ıs-works-list">
+          <svg width="7px" height="20px" class="how-ıs-works-list-icon">
+            <use href="src\img\icons..svg#icon-2"></use>
+          </svg>
+          <p class="how-ıs-works-list-text">Click on the basket and fill out the form.</p>
+        </li>
+        <li class="how-ıs-works-list">
+          <svg width="7px" height="20px" class="how-ıs-works-list-icon">
+            <use href="src\img\icons..svg#icon-3"></use>
+          </svg>
+          <p class="how-ıs-works-list-text">Sit back and relax! Your fresh vegetables basket will be delivered.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="advertisement">
+  <div class="advertisement-container">
+     <h1 class="advertisement-title">
+  Discount up to 40%! Taste the vitamins and keep your health
+     </h1>
   </div>
 </section>
 
