@@ -19,157 +19,133 @@
     <link rel="stylesheet" crossorigin href="/html-css-project/assets/index-B_SY1GJM.css">
   </head>
   <body>
-    <header class="header">
-<div class="header-container">
-  <!-- LOGO -->
-   
-  <svg width="20px" height="20px" class="logo-icon">
-    <use href="src\img\webp\icons..svg#icon-Vector">
-    </use>
-  </svg>
-  <a class="logo-text" href="#">GREEN.HARVEST</a>
+    
+<header class="header">
+  <div class="header-container">
 
-  <!--MENU İCON-->
+    <!--LOGO-->
+    <a class="logo-text" href="#top">
+      <svg class="header-logo-img" aria-label="Green Harvest Logo">
+        <use href="/html-css-project/assets/symbol-defs-BDtaokCZ.svg#icon-logo"></use>
+      </svg>
 
-<label for="menu-toggle" class="burger-botton" aria-label="Open menu">
-<svg width="27px" height="20px" class="burger-icon">
-  <use href="src\img\webp\icons..svg#icon-menu">
-  </use>
-</svg>
-</label>
+      <span>GREEN.HARVEST</span>
+    </a>
 
-<!--checkbox-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+    <label for="menu-toggle" class="burger-button" aria-label="Open menu">
+      <svg width="27" height="20" class="burger-icon" aria-hidden="true">
+        <use href="/html-css-project/assets/symbol-defs-BDtaokCZ.svg#icon-burger"></use>
+      </svg>
+    </label>
 
-  <!--burger button-->
-
-  <label for="menu-toggle" class="burger-button" aria-label="Open menu">
-    <svg class="burger-icon burger-icon--tablet" aria-hidden="true">
-      <use href="src\img\webp\icons..svg#icon-menu"></use>
-    </svg>
-        
-    <svg class="burger-icon burger-icon--mobile" aria-hidden="true">
-      <use href="src\img\webp\icons..svg#icon-menu"></use>
-    </svg>
-  </label>
-
-<!--Desktop Nav-->
-
-  <nav class="desktop-nav">
-    <ul class="nav-bar-list">
-      <li class="nav-bar-element">
-        <a href="#">How It Works</a>
-      </li>
-      <li class="nav-bar-element">
-        <a href="#">Vegetables</a>
-      </li>
-      <li class="nav-bar-element">
-        <a href="#">Reviews</a>
-      </li>
-    </ul>
-    <button class="nav-bar-button" type="button">Shop now</button>
-  </nav>
-  <!--Mobile Menu-->
-
-<div class="mobile-menu" aria-hidden="true">
-<div class="mobile-menu-panel">
-  <label for="menu-toggle" class="mobile-menu-close" aria-label="Close menu">
-    <svg class="close-icon" aria-hidden="true">
-      <use href="src\img\icons..svg#icon-closed"></use>
-    </svg>
-  </label>
-          
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">How It Works</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Vegetables</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Reviews</a>
-        </li>
+  
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-element"><a href="#how-it-works">How It Works</a></li>
+        <li class="nav-bar-element"><a href="#vegetables">Vegetables</a></li>
+        <li class="nav-bar-element"><a href="#reviews">Reviews</a></li>
       </ul>
-          
-      <button class="mobile-menu-button" type="button">Shop now</button>
-</div>
-</div>
+      <button class="nav-bar-button" type="button">Shop now</button>
+    </nav>
 
-</div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <label for="menu-toggle" class="mobile-menu-close">
+          <svg class="close-icon" width="24" height="24">
+            <use href="/html-css-project/assets/symbol-defs-BDtaokCZ.svg#icon-close"></use>
+          </svg>
+        </label>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li><a class="mobile-menu-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="mobile-menu-link" href="#vegetables">Vegetables</a></li>
+            <li><a class="mobile-menu-link" href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-button" type="button">Shop now</button>
+      </div>
+    </div>
+
 </header>
 
-
-    <main>
+    <main id="top">
       <!-- Loads the specified .html file -->
-      <section class="hero">
+      
+<section class="hero" id="hero">
     <div class="hero-container">
         <div class="hero-text-title">
-            <span class="hero-title">organic vegetables to your diet today!</span>
-            <p class="hero-text">Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest
-            Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.
+           
+            <h1 class="hero-title">organic vegetables to your diet today!</h1>
+            <p class="hero-text">
+                Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables
+                available.
+                Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated
+                vegetable baskets delivered to you.
             </p>
         </div>
     </div>
+
     <div class="hero-image">
         <picture>
-            <source media="(min-width: 1280px)" srcset="src\img\image-1-1x.jpg src\img\image-1.jpg" />
-            <img src="src\img\image-1-1x.jpg"
-             alt="Basket with vegetables"
-              class="hero-img hero-img--basket"
-               loading="eager"/>
-               
+           
+            <source media="(min-width: 1280px)"
+                srcset="/html-css-project/assets/desktop-basket-1x-DGUs3YKg.jpg 1x, /html-css-project/assets/desktop-basket-2x-C1fLyjMi.jpg 2x" />
+            <source media="(min-width: 768px)" srcset="/html-css-project/assets/tablet-basket-1x-iLBJOdbt.jpg 1x, /html-css-project/assets/tablet-basket-2x-DB4Aix2g.jpg 2x" />
+            <img src="/html-css-project/assets/mobile-basket-1x-CNxf0c36.jpg" srcset="/html-css-project/assets/mobile-basket-1x-CNxf0c36.jpg 1x, /html-css-project/assets/mobile-basket-2x-Bb1ffWWK.jpg 2x"
+                alt="Basket with vegetables" class="hero-img hero-img--basket" loading="eager" />
         </picture>
-
     </div>
 </section>
-
-      <section>
-  <div class="how-is-works.html">
+      <section id="how-it-works">
+  <div class="how-is-works">
     <div class="how-is-works-image">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="src\img\image-2-1x.jpg src\img\image-2.jpg" />
-                  <img src="src\img\image-2-1x.jpg " alt="Preparing vegetables in the kitchen"
-                    class="hero-img hero-img--cutting" loading="lazy" />
-                </picture>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="/html-css-project/assets/desktop-cutting-1x-DbqhHsIT.jpg 1x, /html-css-project/assets/desktop-cutting-2x-DIGdws3u.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="/html-css-project/assets/tablet-cutting-1x-XU2zH0cc.jpg 1x, /html-css-project/assets/tablet-cutting-2x-DkRR-lNt.jpg 2x" />
+        <img src="./img/mobile-cutting-1x.jpg" srcset="./img/mobile-cutting-1x.jpg 1x, ./img/mobile-cutting-2x.jpg 2x"
+          alt="Preparing vegetables in the kitchen" class="hero-img hero-img--cutting" loading="lazy" />
+      </picture>
     </div>
+
     <div class="how-is-works-text-group">
-      <h3 class="how-is-works-title">To order your vegetable basket, simply follow these easy steps</h3>
-      <p class="how-is-works-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit
-      without ever leaving your home.</p>
+      <h2 class="how-is-works-title">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <p class="how-is-works-text">
+        Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy
+        the taste of fresh fruit
+        without ever leaving your home.
+      </p>
+
       <ul class="how-is-works-list-top">
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-1"></use>
-          </svg>
-          <p class="how-is-works-list-text">Just choose the vegetable you want to order by clicking on the checkboxes next to it.</p>
+          <p class="how-is-works-list-text">
+            Just choose the vegetable you want to order by clicking on the checkboxes next to it.
+          </p>
         </li>
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-2"></use>
-          </svg>
           <p class="how-is-works-list-text">Click on the basket and fill out the form.</p>
         </li>
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-3"></use>
-          </svg>
-          <p class="how-is-works-list-text">Sit back and relax! Your fresh vegetables basket will be delivered.
+          <p class="how-is-works-list-text">
+            Sit back and relax! Your fresh vegetables basket will be delivered.
           </p>
         </li>
       </ul>
     </div>
   </div>
 </section>
-
       <section class="advertisement">
-  <div class="advertisement-container">
-     <h1 class="advertisement-title">
-  Discount up to 40%! Taste the vitamins and keep your health
-     </h1>
-  </div>
+   <div class="advertisement-container">
+      <h2 class="advertisement-title">
+         <span>Discount up to 40%!</span> Taste the vitamins and keep your health
+      </h2>
+   </div>
 </section>
-
       <!-- THIRD SECTION -->
 <section class="third-section">
     <h2 class="third-section-title">organic vegetables</h2>
