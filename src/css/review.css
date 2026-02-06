@@ -1,0 +1,82 @@
+/* =========================================
+   4. BÖLÜM: REVIEWS (MÜŞTERİ YORUMLARI)
+   ========================================= */
+
+.fourth-section {
+  background-color: var(--color-white);
+  padding: 100px 100px;
+  color: var(--color-text-dark);
+}
+
+/* BAŞLIK VE METİN ALANI */
+.fourth-section-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+/* Başlığın Yeşil Kısmı */
+.fourth-section-main-title span {
+  color: var(--color-green);
+}
+
+.fourth-section-main-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+
+/* YORUM KARTLARI LİSTESİ (GRID) */
+.fourth-section-main-person-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* TEKİL KART TASARIMI */
+.fourth-section-person-list {
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  border: 1px solid #eee;
+}
+
+/* Avatar Resmi */
+.review-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  margin-bottom: 20px;
+  background-color: #ccc;
+}
+
+/* İsim */
+.fourth-section-person-list-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+}
+
+/* Yorum Metni */
+.fourth-section-person-list-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
