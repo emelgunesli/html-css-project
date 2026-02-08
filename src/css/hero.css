@@ -1,1 +1,41 @@
+/* =========================================
+   3. HERO BÖLÜMÜ
+   ========================================= */
+.hero {
+    display: flex;
+    width: 100%;
+    min-height: 700px;
+}
 
+/* Sol Taraf (Yeşil Metin Alanı) */
+.hero-container {
+    width: 50%;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 450px;
+    opacity: 0.9;
+}
+
+/* Sağ Taraf (Sepet Resmi) */
+.hero-image {
+    width: 50%;
+    height: 796px;
+}
