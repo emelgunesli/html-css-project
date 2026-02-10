@@ -1,37 +1,36 @@
-<section>
-  <div class="how-is-works.html">
+<section id="how-it-works">
+  <div class="how-is-works">
     <div class="how-is-works-image">
-                <picture>
-                  <source media="(min-width: 1280px)" srcset="
-                               src\img\image-2-1x.jpg 
-                               src\img\image-2.jpg 
-                              " />
-                  <img src="src\img\image-2-1x.jpg " alt="Preparing vegetables in the kitchen"
-                    class="hero-img hero-img--cutting" loading="lazy" />
-                </picture>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="./img/desktop-cutting-1x.jpg 1x, ./img/desktop-cutting-2x.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="./img/tablet-cutting-1x.jpg 1x, ./img/tablet-cutting-2x.jpg 2x" />
+        <img src="./img/mobile-cutting-1x.jpg" srcset="./img/mobile-cutting-1x.jpg 1x, ./img/mobile-cutting-2x.jpg 2x"
+          alt="Preparing vegetables in the kitchen" class="hero-img hero-img--cutting" loading="lazy" />
+      </picture>
     </div>
+
     <div class="how-is-works-text-group">
-      <h3 class="how-is-works-title">To order your vegetable basket, simply follow these easy steps</h3>
-      <p class="how-is-works-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy the taste of fresh fruit
-      without ever leaving your home.</p>
+      <h2 class="how-is-works-title">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <p class="how-is-works-text">
+        Our baskets are assembled with care and delivered straight to your doorstep, so you can enjoy
+        the taste of fresh fruit
+        without ever leaving your home.
+      </p>
+
       <ul class="how-is-works-list-top">
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-1"></use>
-          </svg>
-          <p class="how-is-works-list-text">Just choose the vegetable you want to order by clicking on the checkboxes next to it.</p>
+          <p class="how-is-works-list-text">
+            Just choose the vegetable you want to order by clicking on the checkboxes next to it.
+          </p>
         </li>
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-2"></use>
-          </svg>
           <p class="how-is-works-list-text">Click on the basket and fill out the form.</p>
         </li>
         <li class="how-is-works-list">
-          <svg width="7px" height="20px" class="how-is-works-list-icon">
-            <use href="src\img\icons..svg#icon-3"></use>
-          </svg>
-          <p class="how-is-works-list-text">Sit back and relax! Your fresh vegetables basket will be delivered.
+          <p class="how-is-works-list-text">
+            Sit back and relax! Your fresh vegetables basket will be delivered.
           </p>
         </li>
       </ul>

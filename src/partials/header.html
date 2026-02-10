@@ -1,79 +1,52 @@
+
 <header class="header">
-<div class="header-container">
-  <!-- LOGO -->
-   
-  <svg width="20px" height="20px" class="logo-icon">
-    <use href="src\img\webp\icons..svg#icon-Vector">
-    </use>
-  </svg>
-  <a class="logo-text" href="#">GREEN.HARVEST</a>
+  <div class="header-container">
 
-  <!--MENU İCON-->
+    <!--LOGO-->
+    <a class="logo-text" href="#top">
+      <svg class="header-logo-img" aria-label="Green Harvest Logo">
+        <use href="./img/symbol-defs.svg#icon-logo"></use>
+      </svg>
 
-<label for="menu-toggle" class="burger-botton" aria-label="Open menu">
-<svg width="27px" height="20px" class="burger-icon">
-  <use href="src\img\webp\icons..svg#icon-menu">
-  </use>
-</svg>
-</label>
+      <span>GREEN.HARVEST</span>
+    </a>
 
-<!--checkbox-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+    <label for="menu-toggle" class="burger-button" aria-label="Open menu">
+      <svg width="27" height="20" class="burger-icon" aria-hidden="true">
+        <use href="./img/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </label>
 
-  <!--burger button-->
-
-  <label for="menu-toggle" class="burger-button" aria-label="Open menu">
-    <svg class="burger-icon burger-icon--tablet" aria-hidden="true">
-      <use href="src\img\webp\icons..svg#icon-menu"></use>
-    </svg>
-        
-    <svg class="burger-icon burger-icon--mobile" aria-hidden="true">
-      <use href="src\img\webp\icons..svg#icon-menu"></use>
-    </svg>
-  </label>
-
-<!--Desktop Nav-->
-
-  <nav class="desktop-nav">
-    <ul class="nav-bar-list">
-      <li class="nav-bar-element">
-        <a href="#">How It Works</a>
-      </li>
-      <li class="nav-bar-element">
-        <a href="#">Vegetables</a>
-      </li>
-      <li class="nav-bar-element">
-        <a href="#">Reviews</a>
-      </li>
-    </ul>
-    <button class="nav-bar-button" type="button">Shop now</button>
-  </nav>
-  <!--Mobile Menu-->
-
-<div class="mobile-menu" aria-hidden="true">
-<div class="mobile-menu-panel">
-  <label for="menu-toggle" class="mobile-menu-close" aria-label="Close menu">
-    <svg class="close-icon" aria-hidden="true">
-      <use href="src\img\icons..svg#icon-closed"></use>
-    </svg>
-  </label>
-          
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">How It Works</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Vegetables</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link" href="#">Reviews</a>
-        </li>
+  
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul class="nav-bar-list">
+        <li class="nav-bar-element"><a href="#how-it-works">How It Works</a></li>
+        <li class="nav-bar-element"><a href="#vegetables">Vegetables</a></li>
+        <li class="nav-bar-element"><a href="#reviews">Reviews</a></li>
       </ul>
-          
-      <button class="mobile-menu-button" type="button">Shop now</button>
-</div>
-</div>
+      <button class="nav-bar-button" type="button">Shop now</button>
+    </nav>
 
-</div>
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <label for="menu-toggle" class="mobile-menu-close">
+          <svg class="close-icon" width="24" height="24">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </label>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li><a class="mobile-menu-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="mobile-menu-link" href="#vegetables">Vegetables</a></li>
+            <li><a class="mobile-menu-link" href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-button" type="button">Shop now</button>
+      </div>
+    </div>
+
 </header>

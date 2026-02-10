@@ -1,19 +1,100 @@
-/* Styles for Mobile devices */
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+/* =========================================
+   4. HOW IT WORKS
+   ========================================= */
+#how-it-works {
+    width: 100%;
+    min-height: 700px;
+    height: auto;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+
+.how-is-works {
+    display: flex;
+    height: 100%;
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+
+/* Sol Taraf (Bordo Alan) */
+.how-is-works-image {
+    width: 50%;
+    background-color: var(--color-burgundy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+/* Resim stilizasyonu */
+.how-is-works-image img {
+    max-width: 440;
+    height: 560px;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Sağ Taraf  */
+.how-is-works-text-group {
+    width: 50%;
+    background-color: var(--color-green);
+    /* Üst kısımla aynı yeşil */
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.how-is-works-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.how-is-works-text {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+/* Adım Listesi (1, 2, 3) */
+.how-is-works-list-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    counter-reset: step-counter;
+}
+
+.how-is-works-list {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-text-dark);
+}
+
+/* Yuvarlak Numaralar (Pseudo-element) */
+.how-is-works-list::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    background-color: var(--color-burgundy);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.how-is-works-list-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
