@@ -1,20 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color : white
-}
 footer {
   background-color: rgba(122, 49, 69, 1);
   padding: 40px 20px;
@@ -24,6 +7,9 @@ footer {
   flex-direction: column;
   gap : 80px;
   font-family: "Inter Tight", Roboto, Arial, sans-serif;
+}
+footer a {
+  color : white;
 }
 .logo {
   font-size: 12px;
@@ -51,6 +37,7 @@ footer {
   font-weight: 500;
   line-height: 1.42rem;
   letter-spacing: 0;
+  margin : 0
 }
 .footer-title-address{
   display: flex;
@@ -73,6 +60,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap : 14px;
+  padding: 0;
+  margin : 0
 }
 .footer-title-link {
   font-family: "Inter Tight", Roboto, Arial, sans-serif;
@@ -102,9 +91,15 @@ footer {
 .policy-setting {
   display: flex;
   gap : 8px;
+  align-items: center;
 }
 .policy-setting a {
   color : rgba(212, 191, 196, 1);
+}
+.footer-copyright {
+  margin : 0;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   footer {

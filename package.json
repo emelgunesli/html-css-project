@@ -19,5 +19,16 @@
   "dependencies": {
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emelgunesli/html-css-project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/emelgunesli/html-css-project/issues"
+  },
+  "homepage": "https://github.com/emelgunesli/html-css-project#readme"
 }
