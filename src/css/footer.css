@@ -1,0 +1,166 @@
+footer {
+  background-color: rgba(122, 49, 69, 1);
+  padding: 40px 20px;
+  min-width: 360px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap : 80px;
+  font-family: "Inter Tight", Roboto, Arial, sans-serif;
+}
+footer a {
+  color : white;
+}
+.logo {
+  font-size: 12px;
+  font-weight: 600;
+}
+.logo-icon {
+  fill: white;
+  background : transparent;
+  width: 16px;
+  height: 16px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-container-row{
+  display: flex;
+  flex-direction: column;
+  gap : 14px
+}
+.footer-text {
+  font-family: "Inter Tight", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42rem;
+  letter-spacing: 0;
+  margin : 0
+}
+.footer-title-address{
+  display: flex;
+  flex-direction: column;
+  gap : 40px
+}
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap : 14px;
+  width: 215px;
+  font-family: "Inter Tight", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.42rem;
+  letter-spacing: 0;
+  font-style: normal;
+}
+.footer-title-main {
+  display: flex;
+  flex-direction: column;
+  gap : 14px;
+  padding: 0;
+  margin : 0
+}
+.footer-title-link {
+  font-family: "Inter Tight", Roboto, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+.logo-box {
+  display: flex;
+  gap : 4px;
+  align-items: center;
+}
+.footer-privacy-copyright {
+  display: flex;
+  flex-direction: column;
+  gap : 16px;
+  font-family: "Inter Tight", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42rem;
+  letter-spacing: 0;
+  color : rgba(212, 191, 196, 1);
+}
+.policy-setting {
+  display: flex;
+  gap : 8px;
+  align-items: center;
+}
+.policy-setting a {
+  color : rgba(212, 191, 196, 1);
+}
+.footer-copyright {
+  margin : 0;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 32px;
+  }
+  .footer-container-row {
+    width: 265px;
+  }
+  .footer-container {
+    flex-direction: row;
+    gap : 250px;
+    justify-content: space-between;
+  }
+  .footer-privacy-copyright{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-title-main {
+    width: 227px;
+  }
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .logo-box {
+    display: flex;
+    gap : 8.89px;
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.25rem;
+  }
+  .footer-privacy-copyright {
+    font-size: 16px;
+    line-height: 1.25rem;
+  }
+  .address-container{
+    font-size: 16px;
+    line-height: 1.25rem;
+  }
+  .logo-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width : 1024px) {
+  footer {
+    padding: 52px 100px;
+  }
+  .footer-title-address {
+    flex-direction: row;
+    gap : 121px;
+    justify-content: space-between;
+  }
+  .footer-title-main {
+    gap : 24px;
+  }
+  .footer-title-main {
+    width: 228px;
+  }
+}
