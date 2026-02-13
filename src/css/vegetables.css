@@ -1,0 +1,95 @@
+/* =========================================
+   3. BÖLÜM: ORGANIC VEGETABLES (ÜRÜN KARTLARI)
+   ========================================= */
+
+.third-section {
+    background-color: var(--color-burgundy);
+
+    color: var(--color-white);
+
+    padding: 100px 100px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bölüm Başlığı */
+.third-section-title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+/* Bölüm Açıklama Metni */
+.third-section-text {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+/* KARTLARIN LİSTESİ (GRID YAPISI) */
+.third-section-list-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    width: 100%;
+}
+
+/* TEKİL KART TASARIMI */
+.third-section-list {
+    background-color: var(--color-white);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 380px;
+
+    transition: transform 0.3s ease;
+}
+
+.third-section-list:hover {
+    transform: translateY(-10px);
+}
+
+/* Kart İçindeki Başlık (EGGPLANT vb.) */
+.third-section-list-title {
+    color: var(--color-burgundy);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+/* Kart İçindeki Fiyat */
+.third-section-list-text {
+    color: var(--color-text-dark);
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Kart İçindeki Görsel */
+.third-section-list-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+
+    object-fit: contain;
+
+    align-self: center;
+
+    margin-top: auto;
+}

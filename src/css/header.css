@@ -1,0 +1,112 @@
+/* =========================================
+   2. HEADER 
+   ========================================= */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 170px;
+    z-index: 100;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-bar-list {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-bar-element a {
+    width: 118px;
+    height: 44px;
+    color: var(--color-white);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    transition: background 0.3s;
+    gap: 10px;
+}
+
+.nav-bar-element a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-bar-button {
+    background-color: var(--color-dark-btn);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.menu-toggle,
+.burger-button,
+.mobile-menu {
+    display: none !important;
+}
+
+/* Logo Link */
+.logo-text {
+    display: flex;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+/* Logo İkonu */
+.header-logo-img {
+    width: 20px;
+
+    height: 20px;
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0;
+    fill: currentColor;
+}
+
+.logo-text span {
+    font-family: sans-serif;
+
+    font-weight: 700;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    display: inline-block;
+
+}
